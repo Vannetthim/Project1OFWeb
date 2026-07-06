@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទំនាក់ទំនង - ឆ្ងាញ់ៗ ហ្វូត</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Kantumruy Pro', 'Hanuman', sans-serif;
+            background-color: rgb(38, 37, 37); /* ប្តូរផ្ទៃខាងក្រោយទូទៅជាពណ៌ងងឹត */
+        }
+        .active-orange {
+            color: #ffc107 !important;
+            font-weight: bold;
+        }
+        
+        /* Layout ផ្ទៃខាងក្រោយដូចទៅនឹងទំព័រ About ទាំងស្រុង */
+        .contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                        url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&q=80') no-repeat center center/cover;
+            background-attachment: fixed;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* ប៊ូតុងផ្ញើសារពណ៌ក្រូច និងមាន Hover Effect ស្អាត */
+        .btn-submit-form {
+            background-color: #fd7e14;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-submit-form:hover {
+            background-color: #e8590c;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(253, 126, 20, 0.4);
+        }
+        
+        /* រង្វង់ជុំវិញ Icon ព័ត៌មានទំនាក់ទំនង */
+        .info-icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="home.html">ឆ្ងាញ់ៗ ខ្មែរហ្វូត</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME(ទំព័រដើម)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT(អំពីហាង)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food.html">FOOD(ម្ហូបអាហារ)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drink.html">DRINK(ភេសជ្ជៈ)</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link  active text-warning" href="contact.html">CONTACT(ទំនាក់ទំនង)</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-warning w-100" href="auth.html">ចូលប្រើ / ចុះឈ្មោះ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-hero py-5 text-white">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                
+                <section class="col-lg-6">
+                    <div class="mb-5">
+                        <h1 class="display-5 fw-bold text-warning mb-3">ទំនាក់ទំនងយើងខ្ញុំ</h1>
+                        <p class="lead text-light opacity-75">ប្រសិនបើលោកអ្នកមានចម្ងល់ ការរិះគន់ដើម្បីស្ថាបនា ឬចង់វាយតម្លៃសេវាកម្ម សូមទាក់ទងមកយើងខ្ញុំតាមរយៈព័ត៌មានខាងក្រោម៖</p>
+                    </div>
+
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="info-icon-box flex-shrink-0">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 fw-bold text-warning mb-1">លេខទូរស័ព្ទ</h3>
+                                <p class="mb-0 text-light opacity-75">+855 12 345 678 / +855 98 765 432</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="info-icon-box flex-shrink-0">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 fw-bold text-warning mb-1">ម៉ោងបើកលក់</h3>
+                                <p class="mb-0 text-light opacity-75">បើកបម្រើជូនរៀងរាល់ថ្ងៃ៖ 7:00 ព្រឹក - 9:00 យប់</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="info-icon-box flex-shrink-0">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 fw-bold text-warning mb-1">អាសយដ្ឋានហាង</h3>
+                                <p class="mb-0 text-light opacity-75">ផ្លូវឯករាជ្យ, សង្កាត់ចតុមុខ, ខណ្ឌដូនពេញ, រាជធានីភ្នំពេញ, កម្ពុជា</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-lg-6">
+                    <div class="card bg-white text-dark shadow-lg p-4 p-sm-5 border-0 rounded-4">
+                        <h2 class="h4 fw-bold mb-4 text-center text-dark">ផ្ញើសារមកកាន់ហាងពួកយើងខ្ញុំ</h2>
+                        
+                        <form action="#">
+                            <div class="mb-3">
+                                <label for="name" class="form-label small fw-bold">ឈ្មោះពេញ</label>
+                                <input type="text" class="form-control py-2" id="name" placeholder="វាយឈ្មោះរបស់អ្នកនៅទីនេះ..." required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label small fw-bold">អ៊ីមែល</label>
+                                <input type="email" class="form-control py-2" id="email" placeholder="វាយអ៊ីមែលរបស់អ្នកនៅទីនេះ..." required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label small fw-bold">សាររបស់អ្នក</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="សរសេរសារ ឬមតិយោបល់របស់អ្នក..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit-form w-100 py-2.5 fw-bold rounded-pill">
+                                ផ្ញើសារឥឡូវនេះ <i class="bi bi-arrow-right ms-1"></i>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 border-top border-secondary">
+        <div class="container">
+            <p class="mb-0 small opacity-75">&copy; ២០២៦ រក្សាសិទ្ធិដោយ ឆ្ងាញ់ៗ ខ្មែរហ្វូត</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

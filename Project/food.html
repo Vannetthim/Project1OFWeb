@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ម្ហូបអាហារខ្មែរ - Khmer Food Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="home.html">ឆ្ងាញ់ៗ ខ្មែរហ្វូត</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME(ទំព័រដើម)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT(អំពីហាង)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" href="food.html">FOOD(ម្ហូបអាហារ)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drink.html">DRINK(ភេសជ្ជៈ)</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link" href="contact.html">CONTACT(ទំនាក់ទំនង)</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-warning w-100" href="auth.html">ចូលប្រើ / ចុះឈ្មោះ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-dark text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/food-hero-bg.jpg') center/cover no-repeat;">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold text-warning mb-2">មុខម្ហូបពិសេសប្រចាំថ្ងៃ</h1>
+            <p class="lead mb-0">រសជាតិដើម ឈ្ងុយឆ្ងាញ់ ជូនពរលោកអ្នកជួបតែភាពរីករាយ</p>
+        </div>
+    </header>
+
+    <div class="container my-4 text-end">
+        <a href="#" class="btn btn-warning position-relative px-4 py-2 fw-bold shadow-sm">
+            <span>🛒 អាហារក្នុងកន្ត្រក</span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+        </a>
+    </div>
+
+    <main class="container mb-5">
+        <h2 class="h3 fw-bold text-dark border-start border-4 border-warning ps-3 mb-4">បញ្ជីមុខម្ហូបខ្មែរ</h2>
+        
+        <div class="row g-4">
+            
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/Amok.jpg">
+                        <img src="image/Amok.jpg" class="card-img-top object-fit-cover" alt="អាម៉ុកត្រី" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">អាម៉ុកត្រី (Amok Trey)</h5>
+                            <p class="card-text text-muted small">ម្ហូបជាតិខ្មែរ ល្បីល្បាញដោយរសជាតិគ្រឿងបុក និងខ្ទិះដូងដិតឆ្ងាញ់។</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$4.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/nodleinpp2.jpg">
+                        <img src="image/nodleinpp2.jpg" class="card-img-top object-fit-cover" alt="គុយទាវភ្នំពេញ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">គុយទាវភ្នំពេញ</h5>
+                            <p class="card-text text-muted small">ស៊ុបឆ្អឹងជ្រូកងងាស់ស្រស់ៗ ជាមួយសាច់ និងគ្រឿងក្នុងឈ្ងុយឆ្ងាញ់。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$2.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/Korko.jpg">
+                        <img src="image/Korko.jpg" class="card-img-top object-fit-cover" alt="សម្លកកូរ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">សម្លកកូរ</h5>
+                            <p class="card-text text-muted small">សម្លបុរាណខ្មែរ សម្បូរដោយបន្លែចម្រុះ និងអង្ករលីងឈ្ងុយ。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$3.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/Nombanhjok.jpg">
+                        <img src="image/Nombanhjok.jpg" class="card-img-top object-fit-cover" alt="នំបញ្ចុក" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">នំបញ្ចុក</h5>
+                            <p class="card-text text-muted small">ញ៉ាំជាមួយសម្លប្រហើរ ឬសម្លការី រសជាតិបែបស្រុកស្រែពិតៗ。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$2.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/kdamchar.jpg">
+                        <img src="image/kdamchar.jpg" class="card-img-top object-fit-cover" alt="ក្ដាមឆា" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ក្ដាមឆាគ្រឿងម្រេចកំពត</h5>
+                            <p class="card-text text-muted small">ក្ដាមថ្មស្រស់ៗ ឆាជាមួយម្រេចខ្ចីល្បីឈ្មោះប្រចាំខេត្តកំពត Order ភ្លាមបានភ្លាម。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$8.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/Nhormsarchkor.jpeg">
+                        <img src="image/Nhormsarchkor.jpeg" class="card-img-top object-fit-cover" alt="ញាំសាច់គោ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ញាំសាច់គោ</h5>
+                            <p class="card-text text-muted small">សាច់គោទន់ៗ ញាំជាមួយបន្លែស្រស់ និងទឹកត្រីកោះកុងហឹរជូរអែម。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$4.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="image/Loklak.jpg" class="card-img-top object-fit-cover" alt="ឡុកឡាក់" style="height: 200px;">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ឡុកឡាក់សាច់គោ</h5>
+                            <p class="card-text text-muted small">សាច់គោឆាទឹកប៉េងប៉ោះដិត ញ៉ាំជាមួយទឹកម្រេចក្រូចឆ្មា。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$5.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/mjukrerng.jpg">
+                        <img src="image/mjukrerng.jpg" class="card-img-top object-fit-cover" alt="សម្លម្ជូរគ្រឿង" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">សម្លម្ជូរគ្រឿង</h5>
+                            <p class="card-text text-muted small">សម្លបុងគ្រឿងលឿង ដាក់សាច់គោ និងត្រកួន រសជាតិដិតដល់ចិត្ត。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$3.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/bruhokktis.jpg">
+                        <img src="image/bruhokktis.jpg" class="card-img-top object-fit-cover" alt="ប្រហុកខ្ទិះ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ប្រហុកខ្ទិះ</h5>
+                            <p class="card-text text-muted small">ឆាជាមួយសាច់ជ្រូកចិញ្ច្រាំ និងខ្ទិះដូង ញ៉ាំជាមួយបន្លែស្រស់គ្រប់មុខ。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$3.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/sachkorang.jpg">
+                        <img src="image/sachkorang.jpg" class="card-img-top object-fit-cover" alt="សាច់គោអាំង" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">សាច់គោអាំង</h5>
+                            <p class="card-text text-muted small">សាច់គោអាំងចង្កាក់ ញ៉ាំជាមួយជ្រក់ល្ហុងស្រួយៗ ត្រូវមាត់គ្នាខ្លាំង。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$3.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/fishang.jpg">
+                        <img src="image/fishang.jpg" class="card-img-top object-fit-cover" alt="ត្រីអាំង" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ត្រីអាំងអំបិល</h5>
+                            <p class="card-text text-muted small">ត្រីស្រស់ៗបំពោកអំបិលអាំងភ្លើងក្ដៅៗ ញ៉ាំជាមួយទឹកត្រីជូរហឹរ。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$4.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/bysachjruk.jpg">
+                        <img src="image/bysachjruk.jpg" class="card-img-top object-fit-cover" alt="បាយសាច់ជ្រូក" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">បាយសាច់ជ្រូក</h5>
+                            <p class="card-text text-muted small">អាហារពេលព្រឹកពេញនិយម សាច់ជ្រូកអាំងទន់ផ្អែម ញ៉ាំជាមួយជ្រក់。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$1.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/jrukkvai.jpg">
+                        <img src="image/jrukkvai.jpg" class="card-img-top object-fit-cover" alt="ជ្រូកខ្វៃ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ជ្រូកខ្វៃ</h5>
+                            <p class="card-text text-muted small">ស្បែកស្រួយស្រោក សាច់ទន់មានជាតិ ញ៉ាំជួបជុំគ្រួសារពិតជាពិសេស。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$6.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/bkeaang.jpg">
+                        <img src="image/bkeaang.jpg" class="card-img-top object-fit-cover" alt="បង្គាអាំង" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">បង្គាអាំង</h5>
+                            <p class="card-text text-muted small">បង្គាសមុទ្រអាំងឈ្ងុយៗ សាច់ផ្អែមឆ្ងាញ់លំដាប់ផ្កាយ。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$5.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/miichar.jpg">
+                        <img src="image/miichar.jpg" class="card-img-top object-fit-cover" alt="មីឆា" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">មីឆាគ្រឿងសមុទ្រ</h5>
+                            <p class="card-text text-muted small">មីលឿងឆាក្ដៅរហ័ស ជាមួយមឹក បង្គា និងបន្លែបៃតង。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$3.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/kaiikhmer.png">
+                        <img src="image/kaiikhmer.png" class="card-img-top object-fit-cover" alt="សម្លការី" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">សម្លការីខ្មែរ</h5>
+                            <p class="card-text text-muted small">ការីសាច់មាន់ ជាមួយដំឡូងផ្អែម និងខ្ទិះដូង មិនហឹរពេក ឆ្ងាញ់ណាស់。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$4.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/mengang.jpg">
+                        <img src="image/mengang.jpg" class="card-img-top object-fit-cover" alt="មឹកអាំង" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">មឹកអាំង</h5>
+                            <p class="card-text text-muted small">មឹកបំពង់អាំងស្រស់ៗ ស្រួយស្រើប ញ៉ាំជាមួយទឹកត្រីកោះកុង。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$5.00</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/baycharkreng.jpg">
+                        <img src="image/baycharkreng.jpg" class="card-img-top object-fit-cover" alt="បាយឆា" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">បាយឆាគ្រឿងខ្មែរ</h5>
+                            <p class="card-text text-muted small">បាយឆាជាមួយគ្រឿងបុករុក្ខជាតិខ្មែរ ឈ្ងុយប្លែកមាត់ទាក់ចិត្ត。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$2.75</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/chasachkorbunlea.jpg">
+                        <img src="image/chasachkorbunlea.jpg" class="card-img-top object-fit-cover" alt="ឆាសាច់គោ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">ស្លឹកត្រចៀកក្រាញ់ឆាសាច់គោ</h5>
+                            <p class="card-text text-muted small">មុខម្ហូបសុខភាព ជួយបន្សាបកម្ដៅក្នុងរាងកាយ និងមានរសជាតិឆ្ងាញ់。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$3.50</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <a href="image/nombav.jpg">
+                        <img src="image/nombav.jpg" class="card-img-top object-fit-cover" alt="នំប៉ាវ" style="height: 200px;">
+                    </a>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title fw-bold text-dark mb-2">នំប៉ាវខ្មែរ</h5>
+                            <p class="card-text text-muted small">នំប៉ាវក្តៅៗ ស្នូលសាច់ជ្រូកចិញ្ច្រាំ និងពងទាប្រៃជ័រដិត。</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 pt-2 border-top">
+                            <span class="fs-5 fw-bold text-danger">$1.25</span>
+                            <a href="auth.html" class="btn btn-sm btn-outline-warning text-dark fw-bold">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+        <div class="container">
+            <p class="mb-0 text-muted">&copy; ២០២៦ រក្សាសិទ្ធិដោយ <span class="text-warning">ឆ្ងាញ់ៗ ខ្មែរហ្វូត</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

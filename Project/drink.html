@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ភេសជ្ជៈ - Drink Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kantumruy Pro', 'Hanuman', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .active-orange {
+            color: #ffc107 !important; /* ពណ៌លឿងទុំសម្រាប់ទំព័រដែលកំពុងមើល */
+            font-weight: bold;
+        }
+        .btn-buy {
+            background-color: #fd7e14;
+            color: white;
+        }
+        .btn-buy:hover {
+            background-color: #e8590c;
+            color: white;
+        }
+        .card-img-container img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .cart-floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="home.html">ឆ្ងាញ់ៗ ខ្មែរហ្វូត</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">HOME(ទំព័រដើម)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT(អំពីហាង)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food.html">FOOD(ម្ហូបអាហារ)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" href="drink.html">DRINK(ភេសជ្ជៈ)</a>
+                    </li>
+                    <li class="nav-item me-lg-2">
+                        <a class="nav-link" href="contact.html">CONTACT(ទំនាក់ទំនង)</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="btn btn-warning w-100" href="auth.html">ចូលប្រើ / ចុះឈ្មោះ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5 shadow-sm" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagedrink/hero-bg.jpg') no-repeat center center/cover; background-color: #0d6efd !important;">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">ភេសជ្ជៈត្រជាក់ចិត្ត</h1>
+            <p class="lead">បំបាត់ភាពក្តៅស្អុះស្អាប់ ជាមួយភេសជ្ជៈស្រស់ៗជាច្រើនមុខ</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center fw-bold mb-5 position-relative pb-2 text-dark">
+            បញ្ជីភេសជ្ជៈស្រស់ស្រាយ
+        </h2>
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/blackcoffee.jpg">
+                            <img src="imagedrink/blackcoffee.jpg" class="card-img-top" alt="កាហ្វេទឹកកក">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">កាហ្វេទឹកកក</h5>
+                        <p class="card-text text-muted small flex-grow-1">កាហ្វេខ្មែរបុកខ្លាំង ឈ្ងុយដិតអារម្មណ៍ ជំនួយស្មារតីពេញមួយថ្ងៃ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.50</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/milktea.jpg">
+                             <img src="imagedrink/milktea.jpg" class="card-img-top" alt="Milk Tea">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">តែទឹកដោះគោ (Milk Tea)</h5>
+                        <p class="card-text text-muted small flex-grow-1">រសជាតិផ្អែមស្រទន់ ពេញនិយមខ្លាំងសម្រាប់យុវវ័យ。</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$2.00</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/orangejuice.webp">
+                            <img src="imagedrink/orangejuice.webp" class="card-img-top" alt="ទឹកក្រូច">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកក្រូចស្រស់</h5>
+                        <p class="card-text text-muted small flex-grow-1">ច្របាច់ថ្មីៗពីផ្លែក្រូចធម្មជាតិ ផ្អែមឆ្ងាញ់ និងមានវីតាមីនខ្ពស់។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.75</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/Tea-melon.jpg">
+                             <img src="imagedrink/Tea-melon.jpg" class="card-img-top" alt="តែក្រូចឆ្មា">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">តែក្រូចឆ្មា</h5>
+                        <p class="card-text text-muted small flex-grow-1">តុល្យភាពនៃរសជាតិជូរអែម កាត់ភាពហត់នឿយបានយ៉ាងល្អ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.25</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/Mangojuice.jpeg">
+                            <img src="imagedrink/Mangojuice.jpeg" class="card-img-top" alt="ទឹកស្វាយ">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកស្វាយ</h5>
+                        <p class="card-text text-muted small flex-grow-1">ក្រឡុកពីផ្លែស្វាយទុំ ក្លិនឈ្ងុយ និងមានសាច់ខាប់ក្រាស់ល្អ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.50</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/Watermelon-Juice.webp">
+                            <img src="imagedrink/Watermelon-Juice.webp" class="card-img-top" alt="ទឹកឪឡឹក">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកឪឡឹក</h5>
+                        <p class="card-text text-muted small flex-grow-1">ត្រជាក់ចិត្តបំបាត់ភាពក្តៅស្អុះស្អាប់ភ្លាមៗ ផ្អែមល្ហែមពីធម្មជាតិ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.25</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/mnors.webp">
+                             <img src="imagedrink/mnors.webp" class="card-img-top" alt="ទឹកម្នាស់">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកម្នាស់</h5>
+                        <p class="card-text text-muted small flex-grow-1">រសជាតិជូរអែមប្លែកមាត់ ជួយដល់ប្រព័ន្ធរំលាយអាហារ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.50</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/dorng.jpg">
+                             <img src="imagedrink/dorng.jpg" class="card-img-top" alt="ទឹកដូង">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកដូង</h5>
+                        <p class="card-text text-muted small flex-grow-1">ទឹកដូងខ្មែរផ្អែមត្រជាក់ពីដើម បរិសុទ្ធ និងមានប្រយោជន៍ខ្លាំង។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.00</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/smootyfuirt.png">
+                             <img src="imagedrink/smootyfuirt.png" class="card-img-top" alt="Smoothie">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Smoothie ផ្លែឈើ</h5>
+                        <p class="card-text text-muted small flex-grow-1">ផ្លែឈើចម្រុះក្រឡុកជាមួយទឹកដោះគោ ម៉ត់ខាប់ឈ្ងុយឆ្ងាញ់។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$2.25</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/milk2.jpg">
+                             <img src="imagedrink/milk2.jpg" class="card-img-top" alt="ទឹកដោះគោ">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកដោះគោស្រស់</h5>
+                        <p class="card-text text-muted small flex-grow-1">ទឹកដោះគោសុទ្ធ ល្អសម្រាប់សុខភាព និងផ្តល់ថាមពល។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.50</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/soda.jpg">
+                               <img src="imagedrink/soda.jpg" class="card-img-top" alt="សូដា">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">សូដា</h5>
+                        <p class="card-text text-muted small flex-grow-1">ទឹកសូដាឆ្អែតហ្គាស សម្រាប់លាយជាមួយទឹកសេរ៉ូផ្សេងៗ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.00</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/coca.jpg">
+                             <img src="imagedrink/coca.jpg" class="card-img-top" alt="Coca Cola">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Coca-Cola</h5>
+                        <p class="card-text text-muted small flex-grow-1">ភេសជ្ជៈកំប៉ុងល្បីល្បាញលំដាប់ពិភពលោក ជួយឱ្យក្អើកស្រឡះកង់។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.00</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/pepsi.jpg">
+                             <img src="imagedrink/pepsi.jpg" class="card-img-top" alt="Pepsi">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Pepsi</h5>
+                        <p class="card-text text-muted small flex-grow-1">រសជាតិហ្គាសដិត ត្រជាក់ខ្លាំងបំបាត់រាល់ភាពហត់នឿយ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.00</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/greentea.webp">
+                               <img src="imagedrink/greentea.webp" class="card-img-top" alt="តែបៃតង">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">តែបៃតង</h5>
+                        <p class="card-text text-muted small flex-grow-1">តែបៃតងក្តៅឬត្រជាក់ ក្លិនប្រហើរធម្មជាតិ ជួយលាងជាតិពុល។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.50</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/kakavblack.webp">
+                             <img src="imagedrink/kakavblack.webp" class="card-img-top" alt="កាកាវក្តៅ">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">កាកាវក្តៅ</h5>
+                        <p class="card-text text-muted small flex-grow-1">រសជាតិសូកូឡាដិតខាប់ កក់ក្តៅអារម្មណ៍រាល់ពេលបានញ៉ាំ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.75</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/Hotcoffee.webp">
+                            <img src="imagedrink/Hotcoffee.webp" class="card-img-top" alt="កាហ្វេក្តៅ">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">កាហ្វេក្តៅ</h5>
+                        <p class="card-text text-muted small flex-grow-1">ក្លិនឈ្ងុយសាយភាយខ្លាំង ល្អបំផុតសម្រាប់ព្រឹកព្រលឹម។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.25</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/jomrusfuirt.jpg">
+                             <img src="imagedrink/jomrusfuirt.jpg" class="card-img-top" alt="ទឹកផ្លែឈើចម្រុះ">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកផ្លែឈើចម្រុះ</h5>
+                        <p class="card-text text-muted small flex-grow-1">ការរួមបញ្ចូលគ្នានៃវីតាមីនពីផ្លែឈើល្អៗជាច្រើនមុខ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.75</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/toeksut.jpg">
+                               <img src="imagedrink/toeksut.jpg" class="card-img-top" alt="ទឹកសុទ្ធ">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ទឹកសុទ្ធ</h5>
+                        <p class="card-text text-muted small flex-grow-1">ទឹកបរិសុទ្ធធម្មជាតិ ឆ្លងកាត់ការចម្រោះស្ដង់ដារខ្ពស់។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$0.50</span>
+                            <a href="auth.html" class="btn btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/Sprite.webp">
+                             <img src="imagedrink/Sprite.webp" class="card-img-top" alt="Sprite">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Sprite</h5>
+                        <p class="card-text text-muted small flex-grow-1">រសជាតិ لីម៉ុន ឆ្ងាញ់ប្លែក ស្រស់ស្រាយរាល់ពេលក្រេបជួបជុំគ្នា។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.00</span>
+                            <a href="auth.html" class="btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-img-container">
+                        <a href="imagedrink/Fanta.jpg">
+                             <img src="imagedrink/Fanta.jpg" class="card-img-top" alt="Fanta">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Fanta</h5>
+                        <p class="card-text text-muted small flex-grow-1">ភេសជ្ជៈរសជាតិផ្លែក្រូច ផ្អែមឆ្ងាញ់មានហ្គាសជំនួយភាពរីករាយ។</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="text-danger fw-bold fs-5">$1.00</span>
+                            <a href="auth.html" class="btn-buy btn-sm px-3 rounded-pill">ទិញឥឡូវនេះ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; ២០២៦ រក្សាសិទ្ធិដោយ ឆ្ងាញ់ៗ ខ្មែរហ្វូត</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
