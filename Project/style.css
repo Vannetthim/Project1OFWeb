@@ -1,17 +1,15 @@
-/* ១. កំណត់ Font អក្សរខ្មែរជាសកល */
+
 body {
     font-family: 'Khmer OS Battambang', 'Kantumruy Pro', 'Segoe UI', sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
 
-/* ២. ពណ៌លឿងទុំសម្រាប់ទំព័រដែលកំពុងស្ថិតនៅ (Active Page) */
 .active-orange {
     color: #ffc107 !important; 
     font-weight: bold;
 }
 
-/* ៣. ប៊ូតុងទិញទំនិញ (Custom Brand Orange Button) */
 .btn-buy {
     background-color: #fd7e14;
     color: white;
@@ -22,7 +20,6 @@ body {
     color: white;
 }
 
-/* ៤. កំណត់ទំហំរូបភាពកាតមុខម្ហូប/ភេសជ្ជៈឱ្យស្មើៗគ្នា */
 .card-img-container img {
     height: 220px;
     object-fit: cover;
@@ -30,10 +27,9 @@ body {
     transition: transform 0.5s ease;
 }
 .card:hover .card-img-container img {
-    transform: scale(1.05); /* ដើរតួដូច Hover Effect ចាស់ */
+    transform: scale(1.05); 
 }
 
-/* ៥. កំណត់ទីតាំងកន្ត្រកទិញទំនិញឱ្យអណ្តែតលើអេក្រង់ (Floating Cart) */
 .cart-floating {
     position: fixed;
     bottom: 25px;
@@ -41,7 +37,6 @@ body {
     z-index: 1000;
 }
 
-/* ៦. Custom ប៊ូតុងសម្រាប់ទំព័រ Log In (ផ្កាឈូកដិត) */
 .btn-login-pink {
     background-color: #d81b60;
     color: white;
